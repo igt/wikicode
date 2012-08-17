@@ -1,4 +1,4 @@
 wikicode
 ========
 
-Free project for supporting developers and sysadmins.
+This is free project for supporting developers and sysadmins. Convenient search code, configuration and settings. You can participate in project.
