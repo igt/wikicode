@@ -1,0 +1,1 @@
+Время генерации: <?=sprintf('%0.5f',Yii::getLogger()->getExecutionTime())?> с. Использовано памяти: <?=round(memory_get_peak_usage()/(1024*1024),2)."MB"?>
