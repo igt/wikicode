@@ -4,7 +4,7 @@
 // CWebApplication свойства должны быть определены здесь
 return array(
 	'basePath'=>dirname(__FILE__) . DIRECTORY_SEPARATOR . '..',
-	'name'=>'Test',
+	'name'=>'WikiCode',
     'defaultController' => 'main',
     'language'=>'ru',
     'theme'=>'classic',

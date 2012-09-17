@@ -1,0 +1,150 @@
+* {margin:0; padding:0;}
+table { border-collapse:collapse; border-spacing:0; }
+img { border:none; }
+html {height:100%; position:relative;}
+/* reset end 
+-------------------------------------------------------------------------------------------------------*/
+
+@font-face {
+    font-family: 'HeliosCondThinC';
+    src: url('../fonts/HeliosCondThin.eot?') format('embedded-opentype'),
+         url('../fonts/HeliosCondThin.woff') format('woff'), 
+         url('../fonts/HeliosCondThin.ttf')  format('truetype'),
+         url('../fonts/HeliosCondThin.svg#svgFontName') format('svg');
+}
+
+/* General classes start
+-------------------------------------------------------------------------------------------------------*/
+
+/* typography */
+body {position:relative; height:100%; font:normal 12px Arial; color:#777; background:#FFF;}
+a { color:#2d4896; outline:none; text-decoration:underline; }
+a:hover { text-decoration:none; }
+#page {
+    min-height:100%; /* Задаем минимальную высоту 100% */ 
+    _height:100%; /* Задаем высоту 100% в ИЕ6 с помощью хака */
+}
+/* General classes end
+-------------------------------------------------------------------------------------------------------*/
+
+#header {
+    padding: 10px 20px 10px 20px;
+    background: url('../images/bg_head.png') 0 0 repeat-x;
+    height: 39px;
+}
+
+/* text */
+h1 {
+    padding:5px 0 10px;
+    font:normal 28px/30px 'HeliosCondThinC';
+    line-height:26px;
+    color:#2c2c2c;
+    font-weight:normal;
+}
+
+ol.top_links {
+    display: block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+ol.top_links li {
+    display:inline;
+    padding: 0 5px 0 5px;    
+}
+
+ol.top_links li a {
+    color: gray;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.search {
+    text-align: center;
+    padding: 100px 0 10px;
+}
+.search input[type="text"] {
+    width:500px;
+    font-size:16px;
+    border:1px solid gainsboro;
+    padding:5px;
+    transition:border linear .2s,box-shadow linear .2s;
+    -moz-transition:border linear .2s,-moz-box-shadow linear .2s;
+    -webkit-transition:border linear .2s,-webkit-box-shadow linear .2s;
+}
+.search input[type="text"]:focus {
+    outline:none;
+    border-color:rgba(31,86,238,.75);
+    box-shadow:0 0 8px rgba(31,86,238,.5);
+    -moz-box-shadow:0 0 8px rgba(31,86,238,.5);
+    -webkit-box-shadow:0 0 8px rgba(31,86,238,.5);
+}
+
+.search button.submit {
+    background-color: #4D90FE;
+    font-size: 11px;
+    border: 1px solid #3079ED;
+    color: white !important;
+    vertical-align:top;
+    
+    cursor: pointer !important;
+    font-weight: bold;
+    text-align: center;
+    display: inline-block;
+    min-width: 124px;    
+    margin-left: 10px;
+    padding:0px 8px;
+    line-height: 31px;
+    height: 31px;
+    
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;    
+    text-decoration: none !important;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+        
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#4D90FE),to(#4787ED));
+    background-image: -webkit-linear-gradient(top,#4D90FE,#4787ED);
+    background-image: -moz-linear-gradient(top,#4D90FE,#4787ED);
+    background-image: -ms-linear-gradient(top,#4D90FE,#4787ED);
+    background-image: -o-linear-gradient(top,#4D90FE,#4787ED);
+    background-image: linear-gradient(top,#4D90FE,#4787ED);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#4d90fe',EndColorStr='#4787ed');    
+}
+
+.search .logo {
+    background-image: url('../images/logo.png');
+    width: 500px;
+    height: 86px;
+    position: relative;
+    left:50%;
+    margin-left:-250px;
+}
+
+html*.search button.submit {
+    height: 30px;
+    padding: 5px;
+    line-height: normal;
+    vertical-align: auto;
+}
+
+body:nth-of-type(1) .search button.submit {
+    vertical-align: auto;
+    line-height: normal;
+    height: auto;
+    padding:7px;
+}
+
+.search button.submit span.subtext {
+    font: bold 11px/27px Arial,sans-serif !important;
+    vertical-align: top;
+}
+
+#footer {
+    border-top: 1px solid gainsboro;
+    text-align: center;
+    height:30px;
+    margin-top:-30px;
+    position:relative;
+}
